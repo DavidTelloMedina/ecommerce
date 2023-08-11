@@ -1,0 +1,28 @@
+@import url('./footer.css');
+@import url('./home.css');
+@import url('./loading.css');
+@import url('./nav.css');
+@import url('./productDetails.css');
+@import url('./login.css');
+@import url('./purchases.css');
+@import url('./sidebar.css');
+@import url('./columns.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --primary: #f85555;
+  --white: #fff;
+  --light-gray: #dcd9d9;
+  --gray: #c7c7c7;
+  --dark-gray: #4f4f4f;
+  --text-gray: #ababab;
+}
+body {
+  background-color: var(--white);
+  color: var(--dark-gray);
+}

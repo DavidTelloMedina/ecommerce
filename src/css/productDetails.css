@@ -1,0 +1,204 @@
+@import './main.css';
+:root {
+    --primary: #f85555;
+    --white: #fff;
+    --light-gray: #dcd9d9;
+    --gray: #c7c7c7;
+    --dark-gray: #4f4f4f;
+    --text-gray: #ababab;
+}
+.section-pd {
+    padding: 1rem 2.5rem;
+}
+.path {
+    margin-bottom: 3rem;
+}
+.path p {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+.path i {
+    font-size: .4rem;
+    color: var(--primary);
+}
+.content-pd {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.description {
+    /* background-color: wheat; */
+    height: 70vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.description h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.description p {
+    font-size: 1rem;
+}
+.description .buttons .price, 
+.description .buttons .quantity {
+    display: flex;
+    flex-direction: column;
+}
+.description .buttons .price span:first-child,
+.description .buttons .quantity span:first-child {
+    font-size: .9rem;
+    color: var(--text-gray);
+}
+.description .buttons .price span:last-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.description .buttons {
+    /* background-color: yellowgreen; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+}
+.description .buttons button {
+    grid-column: 1 / -1;
+    border: none;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 1rem 0;
+}
+.addSubstract span {
+    margin: 0 .5rem;
+}
+.addSubstract i {
+    transition: .2s all;
+    cursor: pointer;
+}
+.addSubstract i:hover {
+    color: var(--primary);
+}
+/* PHOTO */
+.photo {
+    /* background-color: slateblue; */
+    height: 70vh;
+    width: 45vw;
+}
+.photo .photo-main{
+    /* background-color: red; */
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.photo .photo-main img{
+    object-fit: contain;
+    width: 70%;
+    height: 80%;
+}
+.photo .photo-main i {
+    font-size: 2rem;
+    color: var(--primary);
+    cursor: pointer;
+}
+.photo .photo-main i:first-child {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+}
+.photo .photo-main i:last-child {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+}
+.photo .photo-others{
+    /* background-color: blue; */
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.photo .photo-others div {
+    /* width: 20%; */
+    /* height: 100%; */
+    height: 6rem;
+    width: 6rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo .photo-others div img {
+    /* width: 50%; */
+    height: 40%;
+    object-fit: contain;
+}
+.photoSelect {
+    border: 2px solid var(--primary);
+}
+.arrow-disabled {
+    opacity: .5;
+}
+.not-selectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+/* suggested products */
+.container-suggested {
+    display: flex;
+    flex-direction: column;
+}
+.container-suggested h5 {
+    margin: 3rem 0 1.5rem 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+.suggested-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.card-sug-product {
+    width: 18rem;
+    height: 20rem;
+    background-color: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: .5rem;
+    padding: 1rem;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+}
+.card-sug-product img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+.card-sug-product .container-img {
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-sug-product .content {
+    height: 35%;
+}
+.card-sug-product .content p:first-child {
+    font-weight: bold;
+}
+.card-sug-product button {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: .25rem;
+    outline: none;
+}
